@@ -1,6 +1,6 @@
-package application.entities;
+package entities;
 
-public class Product implements Comparable<Product> {
+public class Product implements Comparable<Product>{
     private String name;
     private Double price;
 
@@ -32,6 +32,7 @@ public class Product implements Comparable<Product> {
 
     @Override
     public int compareTo(Product other) {
+        // compara o preço de um produto com o produto do argumento.
         return price.compareTo(other.getPrice());
     }
 }
